@@ -1,4 +1,3 @@
-import org.jetbrains.kotlin.gradle.plugin.mpp.pm20.util.archivesName
 import java.util.Properties
 import java.io.FileInputStream
 
@@ -65,30 +64,29 @@ android {
 }
 
 dependencies {
+    implementation(libs.androidxKtx)
+    implementation(libs.appcompat)
+    implementation(libs.activityKtx)
+    implementation(libs.fragmentKtx)
+    implementation(libs.material)
+    implementation(libs.constraintlayout)
+    implementation(libs.okhttp)
+    implementation(libs.rxhttp)
+    implementation(libs.glide)
+    implementation(libs.brv)
+    implementation(libs.mmkv)
+    implementation(libs.refreshKernel)
+    implementation(libs.refreshHeader)
+    implementation(libs.refreshFooter)
+    implementation(libs.gson)
+    implementation(libs.flexbox)
+    implementation(libs.loadsir)
+    implementation(libs.permissions)
 
-    implementation("androidx.core:core-ktx:1.9.0")
-    implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("androidx.activity:activity-ktx:1.8.0")
-    implementation("androidx.fragment:fragment-ktx:1.6.2")
-    implementation("com.google.android.material:material:1.11.0")
-    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
-    implementation("com.squareup.okhttp3:okhttp:4.12.0")
-    implementation("com.github.liujingxing.rxhttp:rxhttp:3.2.4")
-    implementation("com.github.bumptech.glide:glide:4.13.1")
-    implementation("com.github.liangjingkanji:BRV:1.5.8")
-    implementation("com.tencent:mmkv-static:1.2.12")
-    implementation("io.github.scwang90:refresh-layout-kernel:2.1.0")
-    implementation("io.github.scwang90:refresh-header-classics:2.1.0")
-    implementation("io.github.scwang90:refresh-footer-classics:2.1.0")
-    implementation("com.google.code.gson:gson:2.10.1")
-    implementation("com.google.android.flexbox:flexbox:3.0.0")
-    implementation("com.kingja.loadsir:loadsir:1.3.8")
-    implementation("com.github.getActivity:XXPermissions:18.62")
+    kapt(libs.rxhttpCompiler)
 
-    kapt("com.github.liujingxing.rxhttp:rxhttp-compiler:3.2.4")
-
-    testImplementation("junit:junit:4.13.2")
-    androidTestImplementation("androidx.test.ext:junit:1.1.5")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.exJunit)
+    androidTestImplementation(libs.espressoCore)
 
 }
