@@ -31,7 +31,7 @@ okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp" }
 rxhttp = { module = "com.github.liujingxing.rxhttp:rxhttp", version.ref = "rxhttp" }
 glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
 brv = { module = "com.github.liangjingkanji:BRV", version.ref = "brv" }
-mmkv = { module = "om.tencent:mmkv-static", version.ref = "mmkv" }
+mmkv = { module = "com.tencent:mmkv-static", version.ref = "mmkv" }
 refreshKernel = { module = "io.github.scwang90:refresh-layout-kernel", version.ref = "refresh" }
 refreshHeader = { module = "io.github.scwang90:refresh-header-classics", version.ref = "refresh" }
 refreshFooter = { module = "io.github.scwang90:refresh-footer-kernel", version.ref = "refresh" }

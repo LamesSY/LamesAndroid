@@ -23,6 +23,7 @@ abstract class CommonFragment<T : ViewBinding> : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         _binding = getViewBinding(inflater, container)
         containerId = container?.id ?: -1
+        _binding!!.root.isClickable = true
         return _binding!!.root
     }
 
