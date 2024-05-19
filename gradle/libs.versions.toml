@@ -34,10 +34,10 @@ brv = { module = "com.github.liangjingkanji:BRV", version.ref = "brv" }
 mmkv = { module = "com.tencent:mmkv-static", version.ref = "mmkv" }
 refreshKernel = { module = "io.github.scwang90:refresh-layout-kernel", version.ref = "refresh" }
 refreshHeader = { module = "io.github.scwang90:refresh-header-classics", version.ref = "refresh" }
-refreshFooter = { module = "io.github.scwang90:refresh-footer-kernel", version.ref = "refresh" }
+refreshFooter = { module = "io.github.scwang90:refresh-footer-classics", version.ref = "refresh" }
 gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
 flexbox = { module = "com.google.android.flexbox:flexbox", version.ref = "flexbox" }
-loadsir = { module = "om.kingja.loadsir:loadsir", version.ref = "loadsir" }
+loadsir = { module = "com.kingja.loadsir:loadsir", version.ref = "loadsir" }
 permissions = { module = "com.github.getActivity:XXPermissions", version.ref = "permissions" }
 rxhttpCompiler = { module = "com.github.liujingxing.rxhttp:rxhttp-compiler", version.ref = "rxhttpCompiler" }
 #测试
