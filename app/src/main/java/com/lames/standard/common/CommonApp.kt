@@ -2,11 +2,10 @@ package com.lames.standard.common
 
 import android.app.Application
 
-
 open class CommonApp : Application() {
 
     companion object {
-        private var instance: CommonApp? = null
+        lateinit var instance: CommonApp
 
         @Suppress("UNCHECKED_CAST")
         @JvmStatic

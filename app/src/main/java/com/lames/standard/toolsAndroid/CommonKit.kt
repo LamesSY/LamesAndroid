@@ -23,12 +23,12 @@ fun changeTimeToStamp(parseTime: String, pattern: String): Long {
 /**
  * 获取字符串简便方法
  */
-fun forString(resId: Int): String = CommonApp.obtain<CommonApp>().getString(resId)
+fun forString(resId: Int): String = CommonApp.instance.getString(resId)
 
 /**
  * 获取颜色值简便方法
  */
-fun forColor(resId: Int): Int = ContextCompat.getColor(CommonApp.obtain(), resId)
+fun forColor(resId: Int): Int = ContextCompat.getColor(CommonApp.instance, resId)
 
 /**
  * 安全取消任务
