@@ -29,6 +29,7 @@ android {
     buildFeatures {
         viewBinding = true
         buildConfig = true
+        compose = true
     }
 
     buildTypes {
@@ -41,6 +42,9 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.5.0"
     }
     kotlinOptions {
         jvmTarget = "1.8"
@@ -82,6 +86,13 @@ dependencies {
     implementation(libs.flexbox)
     implementation(libs.loadsir)
     implementation(libs.permissions)
+
+    implementation(libs.activity.compose)
+    implementation(platform(libs.compose.bom))
+    implementation(libs.ui)
+    implementation(libs.ui.graphics)
+    implementation(libs.ui.tooling.preview)
+    implementation(libs.material3)
 
     kapt(libs.rxhttpCompiler)
 
